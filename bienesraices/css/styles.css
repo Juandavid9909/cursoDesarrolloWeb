@@ -1,0 +1,84 @@
+html {
+    font-size: 62.5%;
+    /* Reset para REMS - 62.5% = 10px de 16px */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+
+/* Globales */
+
+.contenedor {
+    max-width: 120rem;
+    /* Igual a 1200px */
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 26rem;
+}
+
+
+/* Header */
+
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenido-header h1 {
+    color: #FFFFFF;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+
+/* Navegación */
+
+.navegacion a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.navegacion a:hover {
+    color: #71B100;
+}
+
+.navegacion a:last-of-type {
+    margin: 0;
+}
