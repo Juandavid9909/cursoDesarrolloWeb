@@ -1,0 +1,117 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+50,c85ec7+51,a849a3+100 */
+    background: #e570e7;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 50%, #c85ec7 51%, #a849a3 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e570e7 0%, #c85ec7 50%, #c85ec7 51%, #a849a3 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e570e7 0%, #c85ec7 50%, #c85ec7 51%, #a849a3 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3', GradientType=0);
+    /* IE6-9 */
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.hero {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.lista-productos {
+    padding: 0;
+    list-style: none;
+}
+
+.lista-productos li {
+    float: left;
+    width: 50%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.lista-productos li:nth-child(2n + 1) {
+    clear: both;
+}
+
+@media(min-width: 768px) {
+    .lista-productos li {
+        width: 33.3%;
+    }
+    .lista-productos li:nth-child(2n + 1) {
+        clear: unset;
+    }
+    .lista-productos li:nth-child(3n + 1) {
+        clear: both;
+    }
+}
+
+.lista-productos li img {
+    border: 1rem solid rgba(128, 1, 195, 0.45);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.lista-productos li img:hover {
+    border: 1rem solid rgba(128, 1, 195, 1);
+}
+
+.lista-productos li p {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 1rem 0 0 0;
+}
+
+span.precio {
+    color: #FFCE00;
+    font-size: 4rem;
+}
+
+.boton {
+    background-color: #FFCE00;
+    padding: 1rem 4rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #8001C3;
+    transition: background-color .3s ease-in-out;
+}
+
+.boton:hover {
+    background-color: #EBBC00;
+}
