@@ -1,0 +1,52 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media(max-width: 599px) {
+    body {
+        background-color: orange;
+    }
+    h1 {
+        color: white;
+    }
+    p {
+        text-align: justify
+    }
+}
+
+@media(min-width: 600px) and (max-width: 799px) {
+    body {
+        background-color: purple;
+    }
+    h1 {
+        text-align: center;
+    }
+    img {
+        float: right;
+    }
+}
+
+@media(min-width: 800px) {
+    body {
+        background-color: blue;
+    }
+    h1 {
+        color: red;
+    }
+    .contenedor {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    p {
+        color: white;
+    }
+}

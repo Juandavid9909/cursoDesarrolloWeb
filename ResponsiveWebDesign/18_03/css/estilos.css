@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+div.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contenido-inferior::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+div.caja {
+    width: 33.3%;
+    float: left;
+    padding: 0 20px;
+}
+
+div.caja div.contenido {
+    background-color: yellow;
+    padding: 20px;
+}
+
+@media(max-width: 800px) {
+    body {
+        background-color: purple;
+    }
+    h1 {
+        font-size: 30px;
+        color: white;
+    }
+    p {
+        color: white;
+    }
+}
+
+@media(max-width: 500px) {
+    body {
+        background-color: orange;
+    }
+    div.caja {
+        width: 100%;
+        margin: 0 0 20px 0;
+        padding: 0;
+    }
+}

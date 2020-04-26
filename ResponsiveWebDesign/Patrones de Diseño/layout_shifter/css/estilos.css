@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+div.contenedor {
+  max-width: 1100px;
+  margin:0 auto;
+}
+
+div.contenido-principal::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+img {
+  max-width: 100%;
+}
+
+
+@media only screen and (min-width:480px) {
+    aside {
+      float: left;
+      padding-right: 20px;
+    }
+      div.principal img {
+        width: 50%;
+        float: left;
+        padding-right: 20px;
+      }
+}
+@media only screen and (min-width:768px) {
+      aside {
+        width: 25%;
+      }
+      div.principal {
+        float: right; 
+        width: 75%;
+      }
+      div.entrada img {
+        width: 200px;
+        float: left;
+        margin-right: 20px;
+      }
+}

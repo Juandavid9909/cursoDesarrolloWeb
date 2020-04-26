@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: orange;
+}
+h1 {
+  color: #ffffff;
+}
+p {
+  color: white;
+}
+div.caja div.contenido {
+  background-color: blue;
+  margin-bottom: 20px;
+  color: white;
+  padding: 20px;
+}
+@media only screen and (min-width:500px) {
+  body {
+    background-color: purple;
+  }
+}
+@media only screen and (min-width:700px) {
+    div.contenido-inferior {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+    div.caja {
+      width: 33.3%;
+      float: left;
+      padding: 20px;
+      font-size: 80px;
+    }
+    div.caja div.contenido {
+      background-color: blue;
+    }
+    .contenedor {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+}

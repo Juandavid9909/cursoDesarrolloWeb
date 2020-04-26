@@ -1,0 +1,34 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 90%;
+    background-color: #ffffff;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.imagen {
+    width: 100%;
+}
