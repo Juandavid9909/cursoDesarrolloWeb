@@ -1,0 +1,182 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: verdana, geneva, serif;
+}
+
+
+header {
+  padding: 20px 0;
+}
+
+div.contenedor,
+div.contenido {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/** Navegacion **/
+.navegacion{
+  background-color: #db008d;
+}
+nav {
+  width: 1200px;
+  margin:0 auto;
+  position: relative;
+}
+nav ul {
+  list-style: none;
+}
+nav > ul > li {
+  float: left;
+}
+nav ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+nav ul li a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 20px 20px;
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+}
+
+
+nav ul li a:hover {
+  background-color: #00b8e4;
+}
+
+/* SEgundo nivel **/
+
+nav ul ul {
+  position: absolute;
+  top:100%;
+  background-color: rgba(0,184,228, .7);
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul li:hover {
+  background-color: rgba(0,184,228, .7);
+}
+
+/** Contenido Principal**/
+div.contenido::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+main {
+  width: 70%;
+  float: left;
+  padding-right: 40px;
+}
+aside {
+  float: right;
+  width: 30%;
+}
+/* entradas **/
+article {
+    margin-top: 30px;
+}
+h2 {
+    color: #00b8e4;
+    margin-bottom: 20px;
+}
+article::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+article img {
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+}
+article p {
+    line-height: 2;
+    text-align: justify;
+}
+.boton {
+    background-color: #00b8e4;
+    padding: 10px 30px;
+    text-align: center;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/** Aside **/
+aside {
+  margin-top: 30px;
+}
+aside ul {
+  list-style: none;
+}
+aside ul li {
+    padding: 10px 0 10px 10px;
+
+}
+aside ul li:hover {
+  background-color: #00b8e4;
+
+}
+aside ul li a {
+    color: #00b8e4;
+    padding: 10px 0;
+    text-decoration: none;
+}
+aside ul li:hover a {
+  color: #ffffff;
+}
+/** Footer **/
+footer {
+  background-color: #db008d;
+  padding-top: 40px;
+  margin-top:30px;
+}
+
+footer h2 {
+    color: white;
+}
+footer .contenedor::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+footer .nosotros {
+  float: left;
+  width: 30%;
+  color: white;
+}
+footer .menu {
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+footer nav {
+  width: auto;
+}
+footer nav a {
+  color: white;
+  text-decoration: none;
+}
+p.copyright {
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
