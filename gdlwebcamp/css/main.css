@@ -687,7 +687,6 @@ div.tabla-precio p.numero {
 
 div.mapa {
     height: 420px;
-    background-color: green;
 }
 
 
@@ -737,6 +736,7 @@ blockquote p::before {
 
 footer.info-testimonial {
     padding: 0;
+    background-color: transparent;
 }
 
 footer.info-testimonial img {
@@ -865,6 +865,148 @@ p.copyright {
     padding: 10px 0;
     margin: 20px 0 0 0;
     text-align: center;
+}
+
+
+/* Internas */
+
+
+/* Registro */
+
+form.registro h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+}
+
+form.registro label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FE4918;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+div.caja {
+    background-color: white;
+    border: 1px solid #E1E1E1;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.campo {
+    padding: 20px;
+}
+
+@media(min-width: 768px) {
+    div.campo {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+div.paquetes .tabla-precio:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+div.paquetes .tabla-precio input {
+    clear: both;
+    width: 100px;
+    margin: 10px auto 0 auto;
+    display: block;
+}
+
+.contenido-dia {
+    padding: 20px;
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .contenido-dia>div {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+.contenido-dia>div p {
+    text-align: left;
+}
+
+.contenido-dia>div label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contenido-dia>div input {
+    margin-right: 10px;
+}
+
+.contenido-dia>div label time {
+    color: #FE4918;
+    font-weight: bold;
+}
+
+
+/* Resúmen Registro */
+
+div.resumen p {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+div.resumen div.extras {
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+
+div.extras div.orden {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+div.extras div.orden input {
+    margin: 10px 0 0 0;
+}
+
+div.resumen div.total {
+    float: right;
+    width: 50%;
+    padding: 30px;
+}
+
+div.resumen input {
+    display: block;
+    margin: 10px auto;
+}
+
+#lista-productos {
+    background-color: #E1E1E1;
+    padding: 20px;
+    display: none;
+}
+
+#suma-total {
+    text-align: center;
+    font-size: 2em;
+    color: #FE4918;
+}
+
+input[disabled].button {
+    opacity: 0.5;
+}
+
+#error {
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    display: none;
 }
 
 
