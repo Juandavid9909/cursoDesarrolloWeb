@@ -391,6 +391,14 @@ h3 {
   font-size: 3rem;
 }
 
+.bg-verde {
+  background-color: #4CB8B3;
+}
+
+.bg-amarillo {
+  background-color: #FEF46D;
+}
+
 .header {
   background-color: #4CB8B3;
 }
@@ -432,4 +440,159 @@ h3 {
 
 .navegacion-principal a:hover {
   color: #FEF46D;
+}
+
+.video {
+  position: relative;
+  max-height: 70rem;
+  overflow: hidden;
+}
+
+.video .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#891c1e+0,9e37f2+66,ffffff+100,ffffff+100&0.8+0,0.5+100 */
+  background: -moz-linear-gradient(-45deg, rgba(137, 28, 30, 0.8) 0%, rgba(158, 55, 242, 0.6) 66%, rgba(255, 255, 255, 0.5) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(137, 28, 30, 0.8) 0%, rgba(158, 55, 242, 0.6) 66%, rgba(255, 255, 255, 0.5) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(137, 28, 30, 0.8) 0%, rgba(158, 55, 242, 0.6) 66%, rgba(255, 255, 255, 0.5) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc891c1e', endColorstr='#80ffffff', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+.video video {
+  display: block;
+  width: 100%;
+}
+
+.contenido-video {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.contenido-video h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #FFF;
+  font-size: 7rem;
+}
+
+.contenido-video h2 span {
+  background-color: #F53756;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
+.sobre-festival {
+  padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .sobre-festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    column-gap: 5rem;
+  }
+}
+
+.contenido-festival {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenido-festival h2 {
+  font-size: 3rem;
+}
+
+.contenido-festival .fecha {
+  color: #F53756;
+  font-weight: 700;
+}
+
+.contenido-festival .texto {
+  line-height: 1.5;
+}
+
+.lineup {
+  background-color: #F53756;
+  padding: 5rem 0;
+}
+
+.lineup h3,
+.lineup p {
+  text-align: center;
+  color: #FFF;
+}
+
+.lineup .dia {
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.escenarios-contenedor .escenario {
+  padding-top: 2.5rem;
+}
+
+.escenarios-contenedor .nombre-escenario {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.escenarios-contenedor .nombre-escenario:after {
+  content: '';
+  width: 20rem;
+  height: 10rem;
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.edm .nombre-escenario:after {
+  background-image: url(../img/icono_edm.png);
+}
+
+.rock .nombre-escenario:after {
+  background-image: url(../img/icono_rock.png);
+}
+
+.calendario {
+  padding: 0;
+  list-style: none;
+}
+
+.calendario li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+
+.calendario li span {
+  font-weight: 400;
+}
+
+.bg-verde .calendario li:nth-child(odd) {
+  background-color: #3b9691;
+}
+
+.bg-amarillo .calendario li:nth-child(odd) {
+  background-color: #fef03a;
 }
