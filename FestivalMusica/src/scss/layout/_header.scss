@@ -16,6 +16,11 @@
             margin-bottom: 0;
         }
     }
+    &.fijo {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem .4rem #444;
+    }
 }
 
 .navegacion-principal {
