@@ -3,9 +3,11 @@
 @import 'base/utilidades';
 @import 'base/mixins';
 @import 'base/globales';
+
 @import 'layout/UI';
+@import 'layout/header';
 @import 'layout/tabs';
-@import 'layout/servicios.scss';
-@import 'layout/paginacion';
+@import 'layout/servicios';
 @import 'layout/formulario';
+@import 'layout/paginacion';
 @import 'layout/resumen';

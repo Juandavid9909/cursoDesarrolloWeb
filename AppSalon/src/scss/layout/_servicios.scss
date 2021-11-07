@@ -1,32 +1,37 @@
 .listado-servicios {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 2rem;
     @include tablet {
-        @include grid(2, 2rem);
+
+        grid-template-columns: repeat(2, 1fr);
+     
     }
+
     .servicio {
-        margin-bottom: 2rem;
         background-color: $blanco;
-        padding: $separacion / 2;
         border-radius: 1rem;
-        @include tablet {
-            margin-bottom: 0;
-        }
+        padding: 3rem;
         p {
             margin: 0 0 $separacion / 4 0;
-        }
-        .nombre-servicio {
             color: $negro;
+
+            &:last-of-type {
+                margin: 0;
+            }
         }
         .precio-servicio {
             color: $azul;
-            margin: 0;
             font-size: 3rem;
-            font-weight: $bold;
+            font-weight: 700;
         }
+
         &.seleccionado {
-            background-color: $azul;
+            background-color: $azul; 
             p {
                 color: $blanco;
             }
         }
     }
+
 }

@@ -1,4 +1,4 @@
-const { src, dest, watch , parallel } = require('gulp');
+const { src, dest, watch , series, parallel } = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('autoprefixer');
 const postcss    = require('gulp-postcss')
@@ -7,15 +7,17 @@ const cssnano = require('cssnano');
 const concat = require('gulp-concat');
 const terser = require('gulp-terser-js');
 const rename = require('gulp-rename');
-const imagemin = require('gulp-imagemin');
+const imagemin = require('gulp-imagemin'); // Minificar imagenes 
 const notify = require('gulp-notify');
 const cache = require('gulp-cache');
+const clean = require('gulp-clean');
 const webp = require('gulp-webp');
 
 const paths = {
     scss: 'src/scss/**/*.scss',
     js: 'src/js/**/*.js',
-    imagenes: 'src/img/**/*'
+    imagenes: 'src/img/**/*',
+    html: './*.html'
 }
 
 // css es una función que se puede llamar automaticamente
@@ -37,7 +39,7 @@ function javascript() {
       .pipe(terser())
       .pipe(sourcemaps.write('.'))
       .pipe(rename({ suffix: '.min' }))
-      .pipe(dest('./build/js'))
+      .pipe(dest('./build/js'));
 }
 
 function imagenes() {
@@ -55,6 +57,11 @@ function versionWebp() {
 }
 
 
+// function html() {
+//     return src(paths.html)
+//         .pipe(  browsersync.stream() ) 
+// }
+
 function watchArchivos() {
     watch( paths.scss, css );
     watch( paths.js, javascript );
@@ -64,4 +71,7 @@ function watchArchivos() {
   
 exports.css = css;
 exports.watchArchivos = watchArchivos;
-exports.default = parallel(css, javascript,  imagenes, versionWebp, watchArchivos ); 
+exports.default = parallel(css, javascript,  imagenes, versionWebp,  watchArchivos ); 
+
+// Series une diferentes funciones que serán ejecutadas una tras otra en orden secuencial.
+// Parrallel todas las funciones se ejecutan de forma simultanea
